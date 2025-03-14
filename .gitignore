@@ -1,19 +1,35 @@
+# Ignore Python virtual environment
 venv/
 
 # Ignore compiled Python files
 __pycache__/
 *.pyc
 *.pyo
+*.pyd
 
-# Ignore environment variables and settings
+# Ignore environment variables and secrets
 .env
+*.env
+config.json
 
-# Ignore logs and cache
+# Ignore logs and cache files
 *.log
+logs/
+cache/
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore database and data files
 *.sqlite3
+*.db
+*.csv
+*.tsv
+*.parquet
 
 # Ignore VS Code settings (optional)
 .vscode/
 
-# Ignore Jupyter Notebook checkpoints
-.ipynb_checkpoints/
+# Ignore MacOS and Windows system files
+.DS_Store
+Thumbs.db
